@@ -4,6 +4,6 @@ module.exports = {
     publicPath: './',
     outputDir: 'dist',
     chainWebpack: config => {
-        console.log(process.env.NODE_ENV)
+        console.log(process.env.NODE_ENV);
     }
 };
