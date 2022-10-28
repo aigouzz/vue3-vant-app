@@ -3,11 +3,11 @@
   <div class="nav-bar van-hairline--top">
     <ul class="nav-list">
       <router-link  class="nav-list-item active" to="home">
-        <i class="nbicon nblvsefenkaicankaoxianban-1"></i>
+        <van-icon name="wap-home-o" />
         <span>首页</span>
       </router-link>
       <router-link  class="nav-list-item" to="category">
-        <i class="nbicon nbfenlei"></i>
+        <van-icon name="new-arrival-o" />
         <span>分类</span>
       </router-link>
       <router-link  class="nav-list-item" to="cart">
@@ -15,7 +15,7 @@
         <span>购物车</span>
       </router-link>
       <router-link  class="nav-list-item" to="user">
-        <i class="nbicon nblvsefenkaicankaoxianban-"></i>
+        <van-icon name="contact" />
         <span>我的</span>
       </router-link>
     </ul>
