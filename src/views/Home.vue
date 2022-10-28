@@ -159,7 +159,7 @@ export default {
     nextTick(() => {
       window.addEventListener('scroll', () => {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-        scrollTop > 100 ? state.headerScroll = true : state.headerScroll = false
+        state.headerScroll = scrollTop > 100 ? true : false
       })
     })
 
