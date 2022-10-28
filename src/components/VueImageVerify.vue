@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script type="text/ecmascript-6">
+<script>
 import { reactive, onMounted, ref, toRefs } from 'vue'
 export default {
   setup() {
@@ -17,6 +17,7 @@ export default {
     })
     onMounted(() => {
       // 初始化绘制图片验证码
+      console.log(verify.value)
       state.imgCode = draw()
     })
     
@@ -101,7 +102,7 @@ export default {
         ctx.beginPath()
         ctx.arc(randomNum(0, state.width), randomNum(0, state.height), 1, 0, 2 * Math.PI)
         ctx.closePath()
-        ctx.fillStyle = randomColor(150, 200)
+        ctx.fillStyle = randomColor(150, 220)
         ctx.fill()
       }
       return imgCode
