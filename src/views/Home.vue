@@ -286,6 +286,7 @@ export default {
           display: block;
           width: 120px;
           margin: 0 auto;
+          height: 120px;
         }
         .good-desc {
           text-align: center;
